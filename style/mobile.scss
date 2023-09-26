@@ -1,0 +1,1053 @@
+$brown: #B37D62;
+$green: #68D052;
+$black: #232331;
+$white: #FFFFFF;
+$gray: #D9D9D9;
+$bg: #F4F4F4;
+$dark: #232331;
+$gray_h: rgb(80, 80, 80);
+$yellow: #FFBF42;
+$text: #707070;
+$fonts_1: 'Rubik', sans-serif;
+
+@mixin bg_s {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 1800px) {
+    :root {
+        --container_big: 1440px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item {
+        padding: 70px 70px 120px 55px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    header::before {
+        width: 20%;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list {
+        gap: 25px 50px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item {
+        gap: 20px 30px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item {
+        padding: 70px 70px 100px 55px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .icon {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    :root {
+        --container_big: var(--container);
+    }
+    header .header nav > ul {
+        column-gap: 20px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item {
+        padding: 50px 40px 80px 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    :root {
+        --container: 1150px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list {
+        gap: 30px 40px;
+    }
+    .callSection .callBlock .info-block {
+        gap: 20px 150px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before {
+        transform: translate(-170%, -50%) rotate(90deg);
+    }
+    header .header .mob-menu {
+        display: block;
+    }
+    header .header nav,
+    header .header .callback {
+        display: none;
+    }
+    header .header {
+        display: flex;
+    }
+    header::before {
+        width: 28%;
+    }
+    footer .footer .blog .list .item_b {
+        width: 70px;
+        height: 70px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .name-desc ._titleBlock .title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    :root {
+        --fz60: 55px;
+        --fz38: 35px;
+        --fz24: 22px;
+        --fz20: 19px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannSection .bannBlock .header-text {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --fz60: 52px;
+        --container: calc(100vw - 80px)
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list {
+        gap: 30px 0;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.photo-block .play-video {
+        padding: 80px 20px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list {
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+        gap: 60px 0;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(1),
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(3) {
+        grid-column: 1/3;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2) {
+        grid-column: 2/4;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before {
+        transform: translate(-130%, -70%) rotate(90deg);
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before, .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::after {
+        left: 0;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a span {
+        padding-right: 20px;
+    }
+    .servicesSection .servicesBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide .desc {
+        font-size: 16px;
+    }
+    .servicesSection .servicesBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide {
+        padding: 15px 20px;
+    }
+    .header-add .header-add-block .information {
+        gap: 20px 60px;
+    }
+    .header-add .header-add-block .location i {
+        font-size: 25px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list {
+        gap: 20px 30px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list .item_a .icon {
+        width: 60px;
+        height: 60px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list .item_a {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --fz38: 33px;
+    }
+    .approximatePriceSection .approximatePriceBlock .info-block form {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .approximatePriceSection .approximatePriceBlock .info-block form .btn-block {
+        grid-column: 3/4;
+    }
+    .map-block {
+        margin: 40px 0 0;
+    }
+    .map-block .information {
+        right: 40px;
+    }
+    .gallerySection .galleryBlock .info-block-main .info-block {
+        display: flex;
+        overflow: auto;
+        gap: 20px;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+    .gallerySection .galleryBlock .info-block-main .info-block .item {
+        width: 350px;
+        flex: 0 0 auto;
+        &:first-of-type {
+            margin-left: 20px;
+        }
+        &:last-of-type {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .blogItemSection .blogItemBlock .info-block {
+        padding: 30px 30px 58px;
+    }
+    .infoParkingSection .infoParkingBlock .name-back {
+        flex-direction: column;
+    }
+    .infoParkingSection .infoParkingBlock .name-back .item.name {
+        padding: 28px 15px;
+    }
+    .parkingSection .parkingBlock .search-parking-block form.search-parking {
+        gap: 20px 30px;
+    }
+    .approximatePriceSection {
+        .approximatePriceBlock {
+            .map-block {
+                height: auto;
+                #map {
+                    height: 400px;
+                }
+                .information {
+                    position: initial;
+                    transform: none;
+                    width: 100%;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    .mapSection .mapBlock .map-block,
+    .mapSection.parking-item .mapBlock .map-block {
+        height: 400px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block {
+        margin-left: calc((100vw - var(--container)) / 2);
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list {
+        grid-template-columns: repeat(4, minmax(0px, 1fr));
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(1), .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(3) {
+        grid-column: 1/3;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2) {
+        grid-column: 3/5;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before {
+        transform: translate(-180%, -70%) rotate(90deg);
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::after {
+        transform: translateY(90%);
+    }
+    .registrationProcessSection .registrationProcessBlock .info-block .item.form .form-block {
+        max-width: none;
+        width: 100%;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .form-main .accordion .accordion-item .accordion-body.model-brand-car {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-main .accordion .accordion-item .accordion-body.model-brand-car .form-group {
+        order: 1;
+    }
+    .form-main .accordion .accordion-item .accordion-body.model-brand-car .desc {
+        order: 2;
+    }
+    .form-main .accordion .accordion-item .accordion-body.model-brand-car .next-btn {
+        order: 3;
+    }
+    .form-main .accordion .accordion-item .accordion-body.city,
+    .form-main .accordion .accordion-item .accordion-body.count {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .form-main .accordion .accordion-item .accordion-body.count {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .form-group-auto {
+        order: 1;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .checkbox-block {
+        order: 2;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .desc {
+        order: 3;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .btn-block {
+        order: 4;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .parkingSection .parkingBlock .table .body .item {
+        gap: 20px 30px;
+    }
+    .gallerySection .galleryBlock .info-block-main .text .title {
+        width: 100%;
+    }
+    footer .footer .logo-slogan {
+        order: 1;
+        grid-column: span 2;
+    }
+    footer .footer .contacts {
+        order: 2;
+        grid-column: span 2;
+    }
+    footer .footer nav {
+        order: 3;
+        grid-column: span 2;
+    }
+    footer .footer .blog {
+        order: 4;
+        grid-column: span 2;
+    }
+    footer .footer .subscribe {
+        order: 5;
+        grid-column: span 2;
+    }
+    .bannSection .bannBlock .header-text {
+        padding: 50px 0 200px;
+    }
+    .bannSection .bannBlock .header-text {
+        width: 100%;
+    }
+    .header-add .header-add-block .information {
+        gap: 20px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th {
+        padding: 28px 55px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody tr td {
+        padding: 21px 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --fz60: 45px;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .form-group-auto {
+        display: flex;
+        flex-direction: column;
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a:nth-child(1) {
+        padding: 20px 0 20px 55px;
+    }
+    .parkingSection .parkingBlock .table .head > span {
+        display: block;
+        padding: 28px 0 28px 55px;
+    }
+    .form-main .accordion .accordion-item .accordion-body.city, .form-main .accordion .accordion-item .accordion-body.count {
+        display: flex;
+        flex-direction: column;
+    }
+    header::before {
+        width: 35%;
+    }
+    header .header .logo .img {
+        width: 110px;
+    }
+    .desktop-t {
+        display: none!important;
+    }
+    .servicesSection .servicesBlock .info-block .buttonPrevNext.mobile-t,
+    .reviewsSection .reviewsBlock .info-block .buttonPrevNext.mobile-t {
+        display: flex;
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form-main .thanks-block .info-block {
+        width: 100%;
+        margin: 0 35px;
+    }
+    .errorSection .errorBlock .number {
+        font-size: 200px;
+    }
+    .errorSection .errorBlock .text {
+        font-size: 24px;
+    }
+    .parkingSection .parkingBlock .search-parking-block form.search-parking {
+        display: flex;
+    }
+    .parkingSection .parkingBlock .search-parking-block form.search-parking label {
+        height: auto;
+        flex: 1;
+    }
+    .parkingSection .parkingBlock .table .body .item {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a.btn-block {
+        grid-column: span 2;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before {
+        transform: translate(-140%, -70%) rotate(90deg);
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::after {
+        transform: translateY(70%);
+    }
+    .form-main .accordion .accordion-item .accordion-body.car-body .list, .form-main .accordion .accordion-item .accordion-body.car-count .list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead::before, .popularDirectionsSection .popularDirectionsBlock table thead::after,
+    .parkingSection .parkingBlock .table .head::before, .parkingSection .parkingBlock .table .head::after {
+        width: 40px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th {
+        padding: 28px 35px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody tr td {
+        padding: 21px 35px;
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a:nth-child(1) {
+        padding: 20px 0 20px 35px;
+    }
+    .parkingSection .parkingBlock .table .head > span {
+        padding: 28px 0 28px 35px;
+    }
+    .header-add {
+        display: none;
+    }
+    .form-main-block .title-form {
+        padding: 15px 25px;
+    }
+    .form-main .accordion .accordion-item .accordion-body.car-body .list, .form-main .accordion .accordion-item .accordion-body.car-count .list {
+        gap: 20px;
+    }
+    .page-bg::before {
+        width: 100%;
+    }
+    .bannSection .bannBlock .header-text {
+        padding: 50px 0 300px;
+    }
+    .formMainSection {
+        margin-top: -250px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    :root {
+        --container: calc(100% - 40px);
+    }
+    .blogItemSection .blogItemBlock .info-block .image-main {
+        height: 380px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .blogItemSection .blogItemBlock .info-block .date {
+        margin-top: 200px;
+    }
+    .blogItemSection .blogItemBlock .prev-next {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .approximatePriceSection .approximatePriceBlock .info-block form {
+        gap: 20px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th:nth-child(2) {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    :root {
+        --fz60: 42px;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .desc {
+        margin-top: 0;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .btn-block {
+        width: 100%;
+    }
+    .form-main .accordion .accordion-item .accordion-body.count .btn-block .btn {
+        width: 100%;
+    }
+    .errorSection .errorBlock .text {
+        font-size: 22px;
+    }
+    .errorSection .errorBlock .number {
+        font-size: 170px;
+    }
+    .contactsFormSection .contactsFormBlock .info-block .item.title-desc {
+        gap: 20px;
+    }
+    .contactsFormSection .contactsFormBlock .info-block .item form {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .blogSection .blogBlock .info-block .item .img::after {
+        padding-bottom: 80%;
+    }
+    .blogSection .blogBlock .info-block .item .main {
+        padding: 20px 40px 40px 40px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th {
+        font-size: 16px;
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a.btn-block .btn {
+        padding: 7px 10px;
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a:nth-child(1) {
+        padding: 12px 0 12px 35px;
+    }
+    .parkingSection .parkingBlock .table .head > span {
+        padding: 28px 0 28px 20px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody tr td {
+        padding: 12px 35px;
+    }
+    .approximatePriceSection .approximatePriceBlock .info-block form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .approximatePriceSection .approximatePriceBlock .info-block form .btn-block {
+        grid-column: span 2;
+        .btn {
+            padding: 12px 20px;
+        }
+    }
+    .approximatePriceSection .approximatePriceBlock > .info-block {
+        padding: 22px 18px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list {
+        display: flex;
+        flex-direction: column;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2) {
+        width: 60%;
+        margin-left: auto;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(1) span,
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(3) span {
+        padding-right: 40%;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block {
+        padding: 0 0 70px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.photo-block .play-video .desc {
+        display: none;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.photo-block .play-video {
+        padding: 0;
+        background-color: transparent;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        height: fit-content;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::after {
+        transform: translateY(50%);
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before {
+        transform: translate(-140%, -70%) rotate(90deg);
+    }
+    .infoStatisticsSection .infoStatisticsBlock .info-block .item .img::before {
+        display: none;
+    }
+    .infoStatisticsSection .infoStatisticsBlock .info-block .item {
+        gap: 15px;
+    }
+    .infoStatisticsSection .infoStatisticsBlock .info-block .item .img {
+        width: 80%;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th.text-highlight {
+        width: 70%;
+    }
+    .servicesSection .servicesBlock .info-block,
+    .whyWeSection .whyWeBlock .info-block,
+    .registrationProcessSection .registrationProcessBlock .info-block,
+    .reviewsSection .reviewsBlock .info-block,
+    .faqSection .faqBlock .info-block,
+    .aboutCompanySection .aboutCompanyBlock .info-block,
+    .whyWePageSection .whyWePageBlock .info-block,
+    .contactsFormSection .contactsFormBlock .info-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-main .accordion .accordion-item .accordion-body.model-brand-car .next-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannMiniSection .bannMiniBlock .header-text {
+        padding: 75px 0;
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --fz60: 40px;
+    }
+    .modal .modal-dialog .modal-content .modal-header {
+        padding: 20px 20px 10px;
+    }
+    .modal .modal-dialog .modal-content .modal-body {
+        padding: 10px 20px 20px;
+    }
+    .errorSection .errorBlock .text {
+        font-size: 20px;
+    }
+    .errorSection .errorBlock .number {
+        margin: 20px 0;
+    }
+    .errorSection .errorBlock .btn-block .btn {
+        padding: 13px 25px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item {
+        padding: 50px 20px 70px;
+        gap: 20px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .icon {
+        width: 90px;
+        height: 90px;
+        padding: 22px;
+    }
+    ._titleBlock {
+        margin-bottom: 30px;
+    }
+    .blogItemSection .blogItemBlock .info-block .image-main {
+        height: 280px;
+    }
+    .blogItemSection .blogItemBlock .info-block {
+        padding: 20px 17px 58px;
+    }
+    .blogItemSection .blogItemBlock .functions .count span {
+        padding: 12px 10px;
+    }
+    .parkingSection .parkingBlock .search-parking-block form.search-parking {
+        gap: 20px 18px;
+    }
+    .approximatePriceSection .approximatePriceBlock .map-block #map,
+    .mapSection .mapBlock .map-block {
+        height: 300px;
+    }
+    .blogSection .blogBlock .add .buttonPrevNext,
+    .servicesSection .servicesBlock .info-block .buttonPrevNext.mobile-t, .reviewsSection .reviewsBlock .info-block .buttonPrevNext.mobile-t,
+    .popularDirectionsSection .popularDirectionsBlock .add .prev-next {
+        gap: 15px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock .add .btn-block .btn {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    .servicesSection .servicesBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide {
+        height: auto!important;
+    }
+    .servicesSection .servicesBlock .info-block .item.slider .swiper .swiper-wrapper {
+        height: 100%;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th.text-highlight {
+        width: 70%;
+    }
+    .form-main {
+        padding: 20px 20px 47px;
+    }
+    .form-main .accordion .accordion-item .accordion-header {
+        border-bottom: 0;
+    }
+    .form-main .accordion .accordion-item .accordion-body {
+        padding: 14px 15px 40px;
+    }
+    footer .footer .contacts {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    header::before {
+        width: 40%;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .name-desc ._titleBlock .title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    :root {
+        --fz60: 38px;
+    }
+    .form-main .thanks-block .info-block .title {
+        font-size: 28px;
+    }
+    .form-main .thanks-block .info-block .desc {
+        font-size: 18px;
+    }
+    .form-main .thanks-block .info-block {
+        gap: 30px;
+    }
+    .errorSection .errorBlock .number {
+        font-size: 39.5vw;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .name-desc ._titleBlock .title {
+        font-size: 26px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .icon {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+    }
+    .blogItemSection .blogItemBlock .prev-next .item {
+        font-size: 16px;
+    }
+    .blogItemSection .blogItemBlock .prev-next .item {
+        padding: 12px 15px;
+    }
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+        line-height: 1.9rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+    h4 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+    h5 {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+    .blogSection .blogBlock .info-block .item .main {
+        gap: 90px;
+    }
+    .blogSection .blogBlock .functions .count span {
+        padding: 12px 10px;
+    }
+    .parkingSection .parkingBlock .table .body .item {
+        font-size: 16px;
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a {
+        padding: 10px 16px 10px 0;
+    }
+    .parkingSection .parkingBlock .table .body .item {
+        gap: 20px;
+    }
+    .parkingSection .parkingBlock .table .body .item .item_a:nth-child(1) {
+        padding: 12px 0 12px 20px;
+    }
+    .faqSection .faqBlock .info-block .item.faq .accordion {
+        padding-left: 60px;
+    }
+    .faqSection .faqBlock .info-block .item.faq .accordion .accordion-item .accordion-header button::before {
+        left: -60px;
+    }
+    header .header .logo .img {
+        width: 100px;
+    }
+    footer .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .footer .contacts {
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+    footer .footer {
+        gap: 15px;
+    }
+    footer .footer .nav_1 {
+        margin-top: 25px;
+    }
+    footer .footer .nav_2 {
+        margin-top: 10px;
+    }
+    footer .footer .blog .list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+    footer .footer .blog .list .item_b {
+        width: 100%;
+        height: auto;
+        position: relative;
+        &::after {
+            display: block;
+            content: '';
+            padding-bottom: 100%;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    footer .footer .subscribe {
+        margin-top: 35px;
+    }
+    footer .footer_2 .text {
+        text-align: left;
+        color: #E1E1E1;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody tr td {
+        padding: 12px 20px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th {
+        padding: 28px 20px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead::before, .popularDirectionsSection .popularDirectionsBlock table thead::after,
+    .parkingSection .parkingBlock .table .head::before, .parkingSection .parkingBlock .table .head::after {
+        width: 25px;
+    }
+    .servicesSection .servicesBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide {
+        padding: 25px 30px;
+    }
+    .registrationProcessSection .registrationProcessBlock {
+        padding: 60px 0;
+    }
+    .reviewsSection .reviewsBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide {
+        padding: 20px;
+    }
+    .reviewsSection .reviewsBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide .source {
+        display: none;
+    }
+    .reviewsSection .reviewsBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide::after {
+        width: 70px;
+        height: 90px;
+    }
+    .reviewsSection .reviewsBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide::before {
+        width: 140px;
+        height: 45px;
+    }
+    .blogSection .blogBlock .add {
+        gap: 10px;
+    }
+    .blogSection .blogBlock .add .btn-block .btn {
+        padding: 15px 20px;
+    }
+    .faqSection .faqBlock .info-block .item.text-block .text .title,
+    .servicesSection .servicesBlock .info-block .item.text-block .text .title,
+    .whyWeSection .whyWeBlock .info-block .item.text-block .text .title,
+    .reviewsSection .reviewsBlock .info-block .item.text-block .text .title,
+    .aboutCompanySection .aboutCompanyBlock .info-block .item.text-block .text .title,
+    .gallerySection .galleryBlock .info-block-main .text .title,
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .text .title {
+        font-size: 28px;
+    }
+    .callSection .callBlock .info-block .text {
+        font-size: 20px;
+    }
+    .callSection .callBlock .info-block {
+        padding: 45px 0;
+    }
+    .callSection .callBlock .info-block .btn-block {
+        width: 100%;
+    }
+    .faqSection .faqBlock .info-block .item.text-block .text .desc,
+    .servicesSection .servicesBlock .info-block .item.text-block .text .desc {
+        padding-right: 0;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody {
+        font-size: 16px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list .item_a .icon {
+        width: 55px;
+        height: 55px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list .item_a span {
+        font-size: 16px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list .item_a {
+        gap: 10px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list {
+        gap: 30px 10px;
+    }
+    .faqSection .faqBlock .info-block .item.faq .accordion .accordion-item .accordion-collapse .accordion-body {
+        font-size: 16px;
+    }
+    .infoTextSection .infoTextBlock .title {
+        font-size: 8.3vw;
+    }
+    .infoTextSection .infoTextBlock {
+        padding: 75px 0;
+    }
+    .aboutCompanySection .aboutCompanyBlock .info-block .item.text-block .text .desc,
+    .aboutCompanySection .aboutCompanyBlock .info-block .item.text-block .list .item_a .desc {
+        font-size: 16px;
+    }
+    .aboutCompanySection .aboutCompanyBlock .info-block .item.text-block .text {
+        gap: 20px;
+    }
+    .aboutCompanySection .aboutCompanyBlock .info-block .item.text-block .list {
+        gap: 30px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a {
+        gap: 24px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(1) span, .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(3) span {
+        padding-right: 25%;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a span {
+        padding-right: 0;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2) {
+        width: 65%;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody tr td {
+        padding: 12px;
+    }
+    section {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --fz60: 9.8vw;
+        --fz24: 20px;
+        --fz16: 3.9vw;
+    }
+    .errorSection .errorBlock .number {
+        -webkit-text-stroke: 10px #FFBF42;
+    }
+    .errorSection .errorBlock .text {
+        font-size: 18px;
+    }
+    .errorSection .errorBlock .number {
+        margin: 10px 0;
+    }
+    .contactsFormSection .contactsFormBlock .info-block .item.title-desc .title {
+        font-size: 35px;
+    }
+    .contactsFormSection .contactsFormBlock .info-block .item.title-desc .desc {
+        font-size: 16px;
+    }
+    .blogSection .blogBlock .functions {
+        flex-direction: column;
+    }
+    .blogSection .blogBlock .functions .count span {
+        width: 100%;
+    }
+    .approximatePriceSection .approximatePriceBlock .map-block #map,
+    .mapSection .mapBlock .map-block {
+        height: 250px;
+    }
+    .mapSection.parking-item .mapBlock .map-block {
+        height: 330px;
+    }
+    .aboutCompanySection .aboutCompanyBlock .info-block .item.text-block .list .item_a .name-statistics .name {
+        font-size: 16px;
+    }
+    .whyWeSection .whyWeBlock .info-block .item.text-block .list {
+        gap: 15px;
+    }
+    input, select, textarea {
+        font-size: 16px;
+    }
+    .reviewsSection .reviewsBlock .info-block .item.slider .swiper .swiper-wrapper .swiper-slide .icon-info .icon {
+        width: 70px;
+        height: 70px;
+    }
+    .gallerySection .galleryBlock .info-block-main .info-block .item .img {
+        height: 420px;
+    }
+    .map-block .information .info-block {
+        padding: 60px 18px 40px;
+    }
+    .map-block .information .info-block::before, .map-block .information .info-block::after {
+        width: 60px;
+        height: 64px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .informationCompanySection .informationCompanyBlock .info-block .item {
+        flex-direction: column;
+    }
+    .approximatePriceSection .approximatePriceBlock .map-block #map,
+    .mapSection .mapBlock .map-block {
+        height: 230px;
+    }
+    .mapSection.parking-item .mapBlock .map-block {
+        height: 250px;
+    }
+    header::before {
+        width: 50%;
+    }
+    .infoStatisticsSection .infoStatisticsBlock .info-block .item .info .counter {
+        font-size: 26vw;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(1) span, .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(3) span {
+        padding-right: 10%;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table thead tr th,
+    .popularDirectionsSection .popularDirectionsBlock table tbody,
+    .parkingSection .parkingBlock .table .body .item {
+        font-size: 14px;
+    }
+    .parkingSection .parkingBlock .search-parking-block form.search-parking label i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2) {
+        width: 70%;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a:nth-child(2)::before {
+        transform: translate(-120%, -70%) rotate(90deg);
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a span {
+        font-size: 16px;
+    }
+    .informationCompanySection .informationCompanyBlock .info-block .item .name-desc ._titleBlock .title {
+        font-size: 24px;
+    }
+    .contactsFormSection .contactsFormBlock .info-block .item.title-desc .title {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form-main .accordion .accordion-item .accordion-body.car-body .list, .form-main .accordion .accordion-item .accordion-body.car-count .list {
+        gap: 10px;
+    }
+    .whyWePageSection .whyWePageBlock .info-block .item.text-block .list .item_a {
+        gap: 15px;
+    }
+    .popularDirectionsSection .popularDirectionsBlock table tbody {
+        font-size: 14px;
+    }
+    .contactsFormSection .contactsFormBlock .info-block .item.title-desc .title {
+        font-size: 30px;
+    }
+}
